@@ -1,0 +1,56 @@
+/* CABEÇALHO */
+
+.cabecalho__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+}
+
+.cabecalho__pesquisar__item{
+    display: none;
+}
+
+.menu__container{
+    
+}
+
+/* Superior Seção */
+
+.superior__secao__container{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 1rem;
+}
+
+/* RODAPÉ */
+
+.rodape__container {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; Essa duas propriedades fazem a mesma coisa que o flex-flow:wrap column*/
+    flex-flow: wrap column;
+}
+
+
+
+@media (min-width: 834px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho__pesquisar__item {
+        display: block;
+    }
+
+    /* RODAPE */
+
+    .rodape__container{
+        justify-content: space-evenly;
+    }
+
+    
+
+}
